@@ -5,6 +5,8 @@ public class UnitTest1
     [Before(TestDiscovery)]
     public static void PreDiscovery()
     {
+        // This is needed to force .NET to load the Shared assembly prior to running tests
+        // This function could do anything, but it must reference a type from the Shared assembly
         Shared.Testing.Log();
     }
 

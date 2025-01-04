@@ -4,11 +4,17 @@ public static class Testing
 {
     private static bool _initialized = false;
 
-    [Before(Assembly)]
+    [Before(TestSession)]
     public static void GlobalSetup()
     {
         _initialized = true;
     }
+
+    // [BeforeEvery(Assembly)]
+    // public static void GlobalSetup(TestContext testContext)
+    // {
+    //     _initialized = true;
+    // }
 
     public static bool IsInitialized => _initialized;
 
