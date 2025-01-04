@@ -11,7 +11,7 @@ public static class Testing
     }
 
     // [BeforeEvery(Assembly)]
-    // public static void GlobalSetup(TestContext testContext)
+    // public static void GlobalSetup(AssemblyHookContext testContext)
     // {
     //     _initialized = true;
     // }
